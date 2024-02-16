@@ -1,0 +1,64 @@
+header{
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    background-color: white;
+}
+.px-10{
+    padding: 0 10px !important;
+}
+.px-7{
+    padding: 0 7px !important;
+}
+.menu, .search{
+    font-family: 'Open Sans Regular';
+}
+.menu ul li,
+.search ul li{
+    position: relative;
+}
+/* định dạng từ li thứ 2 trở đi */
+.menu ul li+li::before { 
+    position: absolute;
+    color: #ffa426;
+    content: var(--bs-breadcrumb-divider, "/");
+    left: -2px;
+}
+.size-14{
+    font-size: 14px;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.menu ul li a{
+    color: #424242;
+}
+.menu ul li a:hover,
+.search ul li a:hover{
+    color: #ffa426;
+}
+.search ul li a:last-child{
+    padding: 0 13px !important;
+}
+.search ul li:last-child::before {
+    position: absolute;
+    color: #ffa426;
+    content: var(--bs-breadcrumb-divider, "|");
+    left: -2px;
+}
+.box-shadow-b{
+    box-shadow: 0 1px 10px 1px #424242;
+}
+.carousel-caption{
+    left: 10% !important;
+    top: 20% !important;
+    right: initial !important;
+    text-align: left;
+}
+.carousel-control-next, .carousel-control-prev{
+    width: 5% !important;
+}
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: url('../fonts/Open\ Sans\ Regular.ttf');
+}
